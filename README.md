@@ -1,6 +1,6 @@
 # Containerization
 
-This is a living document of what I find to be the best in class practices that I find important to highlight.
+This document serves as a living record of the most effective practices I have identified as essential in the field, which I intend to highlight and exemplify.
 
 ## Base Images
 
