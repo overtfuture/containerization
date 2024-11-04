@@ -44,13 +44,15 @@ This should help with managing private npm repositories and seamlessly integrate
 # Builder
 FROM node:20.5.1-bullseye AS build-env
 
-# Copy source
-COPY . /app
-WORKDIR /app
-
+# Cache the npm dependencies
+COPY package*.json .
 # Install Dependencies and inject secret for private npm repo
 RUN —mount=type=secret,id=GITHUB_TOKEN,env=GITHUB_TOKEN \
     npm ci —token-from-env GITHUB_TOKEN
+
+# Copy source
+COPY . /app
+WORKDIR /app
 
 # Build application
 RUN npm run build
