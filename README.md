@@ -8,5 +8,6 @@ This document serves as a living record of the most effective practices I have i
   - [dockerfiles](./docker.md)
   - [nodejs](./nodejs.md)
 - Kubernetes
-  - [kubernetes](./kubernetes.md) 
+  - [kubernetes](./kubernetes.md)
   - [helm (coming soon)](./helm.md)
+
