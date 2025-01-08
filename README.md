@@ -10,4 +10,3 @@ This document serves as a living record of the most effective practices I have i
 - Kubernetes
   - [kubernetes](./kubernetes.md)
   - [helm (coming soon)](./helm.md)
-
